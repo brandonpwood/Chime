@@ -19,6 +19,7 @@ app.set('port', 8000 || env.PORT);
 
 // Initialize twitter API
 var Twitter = require('twitter');
+
 var client = new Twitter({
   consumer_key: 'wC7FDgbROiuMgPHxuKQEOdnsQ',
   consumer_secret: 'RgSLShtYIwgLU4mlgA0rK5QmxGljsfy1UmItXNxAMwcfH9IOsO',
@@ -52,6 +53,7 @@ app.post('/names', function(req, res){
           ids: ids.users
         });
       }else{
+        console.log(err);
         res.send({ids: []});
       }
     });

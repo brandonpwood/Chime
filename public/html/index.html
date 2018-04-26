@@ -10,11 +10,27 @@
 
   <!-- AJAX for Jquery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <!-- Vis.js -->
+  <script type="text/javascript" src="../js/vis.js"></script>
+  <link href="../css/vis.css" rel="stylesheet" type="text/css" />
+
+  <!-- Custom Styles -->
+  <link rel = "stylesheet" href = "/../css/index.css" />
+
 </head>
 
-
 <body>
-  
+
+  <div class = "navbar">
+  </div>
+
+  <div class = "graph" id = "g0"></div>
+
+  <input id  = "namein" type="text" placeholder="Name of account"/>
+  <button class = "menubtn" id = "rootbtn" onClick = "addRoot()"> Set Root </button>
+  <button class = "menubtn" id = "toggle" onClick = "toggleAdd()">Start Adding Nodes</button>
   <script src = '../js/index.js'></script>
+  <script src = '../js/btns.js'></script>
 </body>
 </html>
